@@ -2,7 +2,7 @@ This repository contains a gulpfile to be used with [Poole](https://github.com/p
 
 The gulpfile has several tasks:
 
-`gulp stylus` will compile the stylus.styl file in the public/css directory using three plugins:
+`gulp stylus` will compile all .styl files in the public/css directory using three plugins:
 
 - [jeet](https://github.com/mojotech/jeet): provides a layout/grid system for stylus
 - [rupture](https://github.com/jenius/rupture): provides easy media queries and breakpoints
