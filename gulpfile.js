@@ -19,7 +19,7 @@ var onError = function (err) {
 
 // Compile Stylus with Jeet, Rupture, Autoprefixer
 gulp.task('stylus', function() {
-    return gulp.src('public/css/style.styl')
+    return gulp.src('public/css/*.styl')
     .pipe(plumber({
         errorHandler: onError
     }))
@@ -48,7 +48,5 @@ gulp.task('watch', function() {
     gulp.watch(['*.html', '*/*.html', '*/*.md', '!_site/**'], ['build']);
 
 });
-
-//could i just use live-server isntead of express?
 
 gulp.task('default', ['stylus', 'build', 'serve', 'watch']);
